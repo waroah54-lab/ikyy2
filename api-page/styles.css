@@ -1,0 +1,175 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    padding: 25px 30px;
+    background-image: url('https://raw.githubusercontent.com/IkyyExecutive/IkyyBokep/main/uploads/1765429184226_24801_file_381.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    position: fixed;
+    top: -30vh;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    color: #000;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.spinner-border.custom-spinner {
+    color: #000;
+}
+
+.modal-content {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    color: #000;
+}
+
+.modal-dialog {
+    margin: 20px;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+#apiQueryInputContainer input,
+#searchInput {
+    transition: outline 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #000;
+}
+
+#apiQueryInputContainer input:focus,
+#searchInput:focus {
+    outline: 3px solid #4bc6ff !important;
+    box-shadow: none;
+}
+
+#apiQueryInputContainer input::placeholder,
+#searchInput::placeholder {
+    color: #000;
+    opacity: 0.6;
+}
+
+#apiResponseContent,
+#apiEndpoint {
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #000;
+}
+
+#apiResponseContent::-webkit-scrollbar {
+    display: none;
+}
+
+#apiLinks a {
+    display: block;
+    color: #000;
+    text-decoration: underline;
+    margin-bottom: 0.3rem;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    color: #000;
+}
+
+.spinner-wrapper p {
+    color: #000;
+}
+
+.card, .card-body, .banner, .tab-content > div {
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 10px;
+    color: #000;
+}
+
+.get-btn {
+    background-color: #222 !important;
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px;
+    font-weight: 500;
+}
+
+@keyframes op {
+    0% { opacity: .2; }
+    100% { opacity: 1; }
+}
+
+#versionHeader {
+    animation: op 0.8s infinite alternate;
+    background-color: rgba(84, 190, 255, 0.8);
+    color: white;
+}
+
+/* Override semua elemen teks menjadi hitam, tebal, dan outline putih */
+h1, h2, h3, h4, h5, h6, p, label, span, a, div, small, strong {
+    font-weight: bold !important;
+    color: #000 !important;
+    text-shadow: 
+        -1px -1px 0 #fff,
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
+}
+
+.card, .card-body, .custom-box, .api-box, .api-entry, .api-item {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 12px;
+    color: #000 !important;
+    border: none !important;
+}
