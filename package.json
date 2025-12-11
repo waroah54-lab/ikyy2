@@ -25,6 +25,7 @@
     "@fongsidev/scraper": "^1.0.2-4.2", 
     "async-g-i-s": "^1.5.5",
     "crypto": "^1.0.1",
+    "serverless-http": "^3.2.0",
     "form-data": "^4.0.1",
     "file-type": "^16.5.3",
     "fs": "^0.0.1-security",
