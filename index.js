@@ -4,7 +4,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const cors = require('cors');
 const path = require('path');
-require("../function.js"); // karena file ini sekarang di folder /api
+require("./function.js"); // karena file ini sekarang di folder /api
 
 const app = express();
 
